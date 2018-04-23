@@ -23,7 +23,7 @@ It should be possible to select a house from the list. By tapping on a entry the
     - Code using Kotlin
     - Min. API Level 21
     - Use `RecyclerView`
-    - Avoid use of third party dependencies
+    - Avoid use of third party dependencies where possible
   - iOS
     - Code using Swift 4 or later
     - Deployment Target iOS 11
