@@ -1,3 +1,8 @@
 # Backend Coding Challenge: Mapping Challenge
 
-Ziel: Das Article Datenbank Model wird korrekt
+Akzeptanzkritieren: 
+ - ArticleDTO wird korrekt aus dem Article befüllt
+ - Die ArticleBlocks im ArticleDTO sind korrekt sortiert in der Ausgabe.
+ 
+ Rahmenbedingungen:
+ 

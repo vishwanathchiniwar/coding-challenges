@@ -4,7 +4,7 @@ import com.mhp.coding.challenges.mapping.models.db.Image;
 
 import java.util.List;
 
-public class GalleryBlock {
+public class GalleryBlock extends ArticleBlock {
 
     private List<Image> images;
 
