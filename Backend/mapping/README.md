@@ -12,4 +12,5 @@ Rahmenbedingungen:
  - DB Models und DTO Models können mit Informantionen/Properties erweitert werden.
  - Bestehende Felder von Models und DTOs können nicht modifiziert werden. 
  - Die Packagestruktur darf nicht modifiziert werden. 
+ - Es können beliebig gradle dependencies hinzugefügt werden. 
  
