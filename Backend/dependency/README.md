@@ -2,7 +2,7 @@
 
 ### Projektaufbau:
 Dieses Spring-Boot-Projekt besteht aus drei Submodulen (`inquiry`, `notification` und `application`). 
-Das "notifications"-Modul ist vom "inquiry"-Modul abhängig.
+Das `notification`-Modul ist vom `inquiry`-Modul abhängig. Das `application` ist von beiden abhängig und dient als Spring boot Hauptmodul.
 
 Der `InquiryTest` ruft `InquiryService#create(Inquiry)` auf und prüft, ob die Methoden `EmailHandler#sendEmail(Inquiry)`
 und `PushNotificationHandler#sendNotification` mit dem gleichen Parameter aufgerufen wurden.
