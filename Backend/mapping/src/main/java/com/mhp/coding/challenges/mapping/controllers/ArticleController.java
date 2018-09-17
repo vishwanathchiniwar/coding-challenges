@@ -10,15 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 @RestController
 @RequestMapping("/article")
 public class ArticleController {
 
+    private final ArticleService articleService;
+
     @Autowired
-    private ArticleService articleService;
+    public ArticleController(ArticleService articleService) {
+        this.articleService = articleService;
+    }
 
     @GetMapping()
     public List<ArticleDto> list() {

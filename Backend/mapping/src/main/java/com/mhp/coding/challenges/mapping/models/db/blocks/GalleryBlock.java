@@ -4,9 +4,6 @@ import com.mhp.coding.challenges.mapping.models.db.Image;
 
 import java.util.List;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 public class GalleryBlock {
 
     private List<Image> images;

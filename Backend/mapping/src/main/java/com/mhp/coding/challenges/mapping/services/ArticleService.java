@@ -5,9 +5,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 @Service
 public class ArticleService {
 

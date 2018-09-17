@@ -5,9 +5,6 @@ import com.mhp.coding.challenges.mapping.models.dto.blocks.ArticleBlockDto;
 
 import java.util.Collection;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 public class ArticleDto {
 
     private String title;

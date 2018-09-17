@@ -5,9 +5,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 @Component
 public class ArticleRepository {
 

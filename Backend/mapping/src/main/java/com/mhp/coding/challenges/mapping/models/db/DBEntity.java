@@ -2,9 +2,6 @@ package com.mhp.coding.challenges.mapping.models.db;
 
 import java.util.Date;
 
-/**
- * @author Asdren Hoxha (MHP) - 17.09.18.
- */
 public class DBEntity {
 
     private Long id;
