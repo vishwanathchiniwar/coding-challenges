@@ -9,6 +9,11 @@ public class ArticleMapper {
 
     public ArticleDto map(Article article){
         //TODO
-        return null;
+        return new ArticleDto();
+    }
+
+    public Article map(ArticleDto articleDto) {
+        //TODO
+        return new Article();
     }
 }

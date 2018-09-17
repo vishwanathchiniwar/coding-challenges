@@ -28,6 +28,10 @@ public class ArticleRepository {
         return createDummyArticle(id);
     }
 
+    public void create(Article article){
+        //Ignore
+    }
+
     private Article createDummyArticle(Long id) {
         final Article result = new Article();
         result.setId(id);

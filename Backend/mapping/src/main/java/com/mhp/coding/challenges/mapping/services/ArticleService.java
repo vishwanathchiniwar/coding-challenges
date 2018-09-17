@@ -26,12 +26,18 @@ public class ArticleService {
     public List<ArticleDto> list() {
         final List<Article> articles = repository.all();
         //TODO
-        return new ArrayList<ArticleDto>();
+        return new ArrayList<>();
     }
 
-    public ArticleDto findBy(Long id) {
+    public ArticleDto articleForId(Long id) {
         final Article article = repository.findBy(id);
         //TODO
-        return null;
+        return new ArticleDto();
+    }
+
+    public ArticleDto create(ArticleDto articleDto) {
+        final Article create = mapper.map(articleDto);
+        repository.create(create);
+        return mapper.map(create);
     }
 }
