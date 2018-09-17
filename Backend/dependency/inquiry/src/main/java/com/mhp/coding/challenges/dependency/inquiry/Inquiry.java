@@ -1,5 +1,7 @@
 package com.mhp.coding.challenges.dependency.inquiry;
 
+import java.util.Objects;
+
 public class Inquiry {
 
     private String username;
@@ -37,5 +39,20 @@ public class Inquiry {
                 ", recipient='" + recipient + '\'' +
                 ", text='" + text + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Inquiry inquiry = (Inquiry) o;
+        return Objects.equals(username, inquiry.username) &&
+                Objects.equals(recipient, inquiry.recipient) &&
+                Objects.equals(text, inquiry.text);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, recipient, text);
     }
 }
