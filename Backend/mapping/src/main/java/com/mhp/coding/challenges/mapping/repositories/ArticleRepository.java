@@ -14,7 +14,7 @@ import java.util.*;
 @Component
 public class ArticleRepository {
 
-    public List<Article> list(){
+    public List<Article> all(){
         final List<Article> result = new ArrayList<>();
         result.add(createDummyArticle(1001L));
         result.add(createDummyArticle(2002L));
