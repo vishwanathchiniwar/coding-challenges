@@ -2,7 +2,6 @@
 
 Akzeptanzkritieren: 
  - `Article` wird korrekt zu `ArticleDTO` gemapped (Siehe `ArticleController#list`)
- - `ArticleDTO` wird korrekt zu `Article` gemapped (Siehe `ArticleController#create`)
  - Die Collection von `ArticleBlockDto` in `ArticleDTO` ist nach dem `sortIndex` in `ArticleBlockDTO` sortiert
  - Falls ein `Article` per ID nicht gefunden werden kann, soll eine 404 Repsonse ausgeliefert werden (Siehe `ArticleController#details`)
  - Optional: Falls eine neue Implementierung/Ableitung von `ArticleBlock` implementiert wird und noch kein Mapping implementiert ist,

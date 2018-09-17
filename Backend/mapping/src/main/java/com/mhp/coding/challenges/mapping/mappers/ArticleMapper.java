@@ -13,7 +13,7 @@ public class ArticleMapper {
     }
 
     public Article map(ArticleDto articleDto) {
-        //TODO
+        // Nicht Teil dieser Challenge.
         return new Article();
     }
 }
