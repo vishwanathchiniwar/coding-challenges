@@ -1,6 +1,6 @@
-package com.mhp.coding.challenges.mapping.models.blocks;
+package com.mhp.coding.challenges.mapping.models.db.blocks;
 
-import com.mhp.coding.challenges.mapping.models.Image;
+import com.mhp.coding.challenges.mapping.models.db.Image;
 
 import java.util.List;
 

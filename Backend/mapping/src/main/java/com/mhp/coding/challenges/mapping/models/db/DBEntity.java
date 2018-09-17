@@ -1,4 +1,4 @@
-package com.mhp.coding.challenges.mapping.models;
+package com.mhp.coding.challenges.mapping.models.db;
 
 import java.util.Date;
 
