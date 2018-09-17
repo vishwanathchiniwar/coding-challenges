@@ -1,9 +1,7 @@
 package com.mhp.coding.challenges.mapping.controllers;
 
-import com.mhp.coding.challenges.mapping.mappers.ArticleMapper;
-import com.mhp.coding.challenges.mapping.models.db.Article;
 import com.mhp.coding.challenges.mapping.models.dto.ArticleDto;
-import com.mhp.coding.challenges.mapping.repositories.ArticleRepository;
+import com.mhp.coding.challenges.mapping.services.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,22 +18,15 @@ import java.util.List;
 public class ArticleController {
 
     @Autowired
-    private ArticleMapper articleMapper;
-
-    @Autowired
-    private ArticleRepository articleRepository;
+    private ArticleService articleService;
 
     @GetMapping()
     public List<ArticleDto> list() {
-        final List<Article> result = articleRepository.list();
-        //TODO Challenge
-        return null;
+        return articleService.list();
     }
 
     @GetMapping("/{id}")
     public ArticleDto details(@PathVariable Long id) {
-        final Article result = articleRepository.findBy(id);
-        //TODO Challenge
-        return null;
+        return articleService.findBy(id);
     }
 }
