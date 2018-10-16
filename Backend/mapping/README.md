@@ -1,5 +1,21 @@
 # Backend Coding Challenge: Mapping Challenge
 
+acceptance criteria: 
+ - `Article` is corectly mapped to `ArticleDTO` (see `ArticleController#list` and `ArticleController#details`) and is emitted as a JSON from the Controllers
+ - the collection of `ArticleBlockDto` in `ArticleDTO` is sorted after `sortIndex` in `ArticleBlockDTO`
+ - in case an `Article` cannot be found via ID, a 404 shall be shown (see `ArticleController#details`)
+ - optional: in case a new implementation of `ArticleBlock` is created and no mapping is implemented, the user shall get an info
+ 
+general conditions:
+ - DB Models and DTO Models can be extended with Interfaces/Properties
+ - Existing field of Models and DTOs shall not be modified
+ - the Packagestructure shall not be modified
+ - Any other gradle dependencies can be added.
+
+
+
+--- German -----------------------------------------------
+
 Akzeptanzkritieren: 
  - `Article` wird korrekt zu `ArticleDTO` gemapped (Siehe `ArticleController#list` und `ArticleController#details`) und als JSON von den Controllern ausgegeben. 
  - Die Collection von `ArticleBlockDto` in `ArticleDTO` ist nach dem `sortIndex` in `ArticleBlockDTO` sortiert
