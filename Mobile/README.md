@@ -10,23 +10,11 @@
 
 Erstelle eine Mobile-Application. Die App soll einem Benutzer alle Häuser aus Game of Thrones in einer Liste anzeigen.
 
-Es soll möglich sein eines dieser Häuser aus der Tabelle auszuwählen. Durch Klick auf einen Button soll das ausgewählte Haus als Inhalt eines Tweets getwittert werden.
+Es soll möglich sein eines dieser Häuser aus der Tabelle auszuwählen. Durch Tap auf eine Zelle soll das ausgewählte Haus in einem Detail View angezeigt werden. Dort sollten mehr Information als im Master view ersichtlich sein.
 
-### Tooling, APIs und Docs
+## APIs und Docs
 *Hierzu stehen dir folgende Hilfsmittel zur verfügung:*
 * [Game Of Thrones API](https://anapioficeandfire.com)
-* IFTTT Endpoint: https://maker.ifttt.com/trigger/mhp_challenge/with/key/mgLArA5BWrsgm39Yn8FWoVnrezDadQQcCsMixn34AS7
-*Dieser kann mit drei Übergabeparametern getriggert werden:*
-```json
-{
-  "value1": "",
-  "value2": "",
-  "value3": ""
-}
-```
-
-Der Inhalt dieser Paramter wird von [@1ChallengeBot](https://twitter.com/1ChallengeBot) getwittert.
-
 
 ## Anforderungen
 
@@ -37,6 +25,10 @@ Der Inhalt dieser Paramter wird von [@1ChallengeBot](https://twitter.com/1Challe
     - Verwendung von RecyclerView
     - Nutzung externer Libraries vermeiden
   - iOS
-   -
-   - 
+    - Code using Swift 4 or later
+    - Deployment Target iOS 12
+    - Use `UITableView` or `UICollectionView`
+    - Keine third party dependencies
 - Benutze eine Versionsverwaltung (GitHub, Bitbucket) über die du uns das Projekt zur Verfügung stellst.
+
+Viel Spaß!
