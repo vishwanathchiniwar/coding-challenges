@@ -10,7 +10,7 @@
 
 Create a mobile application. The app should show the user all Game of Thrones houses in a list.
 
-It should be possible to select a house from the list. By tapping on a entry the house should appear in a detail view.
+It should be possible to select a house from the list. By tapping on a entry the house should appear in a detail view were you should display more information to the selected house.
 
 ### APIs and Docs
 
