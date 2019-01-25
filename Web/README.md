@@ -8,9 +8,9 @@
 
 ## Aufgabe
 
-Erstelle eine Single-Page-Application. Die SPA soll einem Benutzer alle Häuser aus Game of Thrones in einer Tabelle anzeigen.
+Erstelle eine Single-Page-Application. Die SPA soll einem Benutzer alle Häuser aus Game of Thrones in einer Übersicht anzeigen.
 
-Es soll möglich sein eines dieser Häuser aus der Tabelle auszuwählen. Durch Klick auf ein Haus soll dieses in einem Detail View angezeigt werden. Dort sollten mehr Information zu dem ausgewählten Haus ersichtlich sein.
+Durch Klick auf ein Haus soll dieses auf einer Detailseite mit weiteren Informationen zu sehen sein.
 
 
 ## APIs und Docs
