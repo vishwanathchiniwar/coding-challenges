@@ -20,7 +20,7 @@ To limit the selection even further, the filter **Preis und Zustand:** (Price an
 
 After the filter has been confirmed select **Preis: Niedrigster** (price: lowest) from the dropdown menu. Then the cheapest vehicle should be displayed via the button `> Fahrzeugdetails` (vehicle details).
 
-Useful test cases should be written for this page in order to be able to guarantee within the scope of a CI that previous functionalities continü to run correctly after a change or an update of features.
+Useful test cases should be written for this page in order to be able to guarantee within the scope of a CI that previous functionalities continue to run correctly after a change or an update of features.
 
 **Functionalities:**
 - Calling up the vehicle details page
@@ -49,7 +49,7 @@ Note: An already existing CI pipeline is assumed.
 ### Test Szenario:
 Zu testen ist die deutsche Version des [Porsche-Finders]. Mittels des Porsche-Finders lassen sich gebrauchte Porsche nach gewünschten Kriterien finden und zum Händler kann Kontakt aufgenommen werden. Ziel der Coding-Challenge ist es, dass der Bewerber ein solides Wissen im Bereich der Testautomatisierung nachweisen kann.
 
-Auf der Startseite soll zürst auf einen bestimmten **Standort** eingeschränkt werden und folgende Kriterien genutzt werden:
+Auf der Startseite soll zuerst auf einen bestimmten **Standort** eingeschränkt werden und folgende Kriterien genutzt werden:
 - Stadt/ Postleitzahl: **10245**
 - Distanz: **50 km**
 - Porsche Zentrum: **Porsche Zentrum Berlin**
