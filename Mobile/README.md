@@ -25,7 +25,7 @@ Es soll möglich sein eines dieser Häuser aus der Tabelle auszuwählen. Durch T
     - Verwendung von RecyclerView
     - Nutzung externer Libraries vermeiden
   - iOS
-    - Code using Swift 4 or later
+    - Code using Swift 5 or later
     - Deployment Target iOS 12
     - Use `UITableView` or `UICollectionView`
     - Keine third party dependencies
