@@ -14,7 +14,7 @@ You are allowed to use the following assistance:
 
 ### Requirements
 
-- Create a SPA with a framework of your choice (Angualr, React, Vue, ...).
+- Create a SPA with a framework of your choice (Angular, React, Vue, ...).
 - Use a bundler (e.g. Webpack) to create a distributable.
 - Use versioning (GitHub, Bitbucket) to provide us your project.
 
