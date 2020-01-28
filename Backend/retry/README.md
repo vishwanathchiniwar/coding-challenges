@@ -23,7 +23,7 @@ The following services are being started:
     - MongoDB (NoSQL Database): `[http://localhost:27017](http://localhost:27017)`
     - Mailhog (Mail Server Mock): `[http://localhost:1025](http://localhost:1025)` (SMTP Server), `[http://localhost:8025](http://localhost:8025)` (Web UI - Inbox)
     
-    For successful completion of the challenge only the provided services may be used. You are not forced to use all of the services, but it is not allowed to use additional applications and tools.
+    For successful completion of the challenge only the provided services may be used. You are not forced to use all of them, but it is not allowed to use additional services.
 
 - The structure of the microservice at hand follows the Hexagonal-Architecture (aka. Clean Architecture - [https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)). Incorporate your implementation into the existing application architecture.
 - By default the mail server mock (MailHog) is configured to reject 50% of the received emails. This behaviour can be modified or disabled in the `docker-compose.yml`.
