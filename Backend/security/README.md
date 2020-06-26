@@ -2,11 +2,11 @@
 
 ## Description:
 
-This Spring Boot project consists of one microservice, which is responsible for the access system of the company you now work for. The original developer never implemented any security features. The access to the network and therefore also the access system was handled elsewhere, so there was no need for a security implementation. In the course of a recent network structure change this requirement changed
+Within the framework of an agile project, new security mechanisms for an access system of doors are to be implemented. Until now, access to the system via network zones and VPN has been secured on an on-premises hosted system, thus, a security implementation was not mandatory until now. However, in the course of a planned migration to the cloud, this requirement has changed.
 
-In the current version of the service, as long as one has access to the network, they access all doors in the building and even unlock them if they wanted to. The service can be accessed through its REST API and then read from and written to. This poses a security threat and cannot be ignored
+Access to the current version of the service is available to anyone who has access to the network. This access lets you access all doors and even unlock them. The service is accessible externally through a REST API and can be read and modified through this. This represents a security risk and must not be ignored.
 
-Your first project as new developer in the company will be to implement a security system for both existing endpoints in the service.
+Your first project as a new developer in the company will be to secure both endpoints of the service.
 
 ## Acceptance Criteria:
 
@@ -39,11 +39,11 @@ Your first project as new developer in the company will be to implement a securi
 
 ## Beschreibung:
 
-Der ursprüngliche Entwickler hatte damals nie Sicherheitsmechanismen eingebaut. Der Zugang zum Netzwerk und damit auch zum Zugangssystem der Türen würde an anderer Stelle geregelt, was eine Sicherheitsimplementierung bisher überflüssig machte. Im Zuge einer kürzlichen Umstrukturierung des Netzwerk, hat sich diese Anforderung jedoch geändert
+Im Rahmen eines agilen Projekts sollen neue Sicherheitsmechanismen für ein Zugangssystem von Türen implementiert werden. Bisher wurde der Zugriff zum System über Netzwerkzonen und VPN auf ein On-Premises gehostetes System abgesichert. Daher war eine Sicherheitsimplementierung bisher nicht zwingend notwendig. Im Zuge einer geplanten Migration in die Cloud, hat sich diese Anforderung jedoch geändert.
 
-Zugriff auf die aktuelle Version des Services hat jeder, der Zugang zum Netzwerk hat. Dieser Zugang lässt einen sämtliche Türen abrufen und diese sogar entriegeln. Der Service ist nach außen durch eine REST API erreichbar und kann über diese ausgelesen und verändert werden. Dies stellt ein Sicherheitsrisiko dar und darf nicht ignoriert werden
+Zugriff auf die aktuelle Version des Services hat jeder, der Zugang zum Netzwerk hat. Dieser Zugang lässt einen sämtliche Türen abrufen und diese sogar entriegeln. Der Service ist nach außen durch eine REST API erreichbar und kann über diese ausgelesen und verändert werden. Dies stellt ein Sicherheitsrisiko dar und darf nicht ignoriert werden.
 
-Dein erstes Projekt als neuer Entwickler im Unternehmen wird es sein, beide Endpunkte des Services zu sichern
+Dein erstes Projekt als neuer Entwickler im Unternehmen wird es sein, beide Endpunkte des Services abzusichern.
 
 ## Akzeptanzkriterien:
 
