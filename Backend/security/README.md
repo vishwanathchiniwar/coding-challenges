@@ -2,11 +2,11 @@
 
 ## Description:
 
-This Spring Boot project consists of one microservice, which is responsible for the access system of the company you now work for. The person who created the original system was a student, but they never implemented any security features
+This Spring Boot project consists of one microservice, which is responsible for the access system of the company you now work for. The original developer never implemented any security features. The access to the network and therefore also the access system was handled elsewhere, so there was no need for a security implementation. In the course of a recent network structure change this requirement changed
 
-In the current version of the service, as long as one has access to the network, they access all doors in the building and even unlock them if they wanted to. The service can be accessed through its REST API and then read from and written to. This poses a security threat and cannot be ignored anymore
+In the current version of the service, as long as one has access to the network, they access all doors in the building and even unlock them if they wanted to. The service can be accessed through its REST API and then read from and written to. This poses a security threat and cannot be ignored
 
-You first project as new developer in the company will be to implement a security system for both existing endpoints in the service.
+Your first project as new developer in the company will be to implement a security system for both existing endpoints in the service.
 
 ## Acceptance Criteria:
 
@@ -39,9 +39,9 @@ You first project as new developer in the company will be to implement a securit
 
 ## Beschreibung:
 
-Das vorliegende Spring Boot Projekt besteht aus einem Microservice, welcher für das Zutrittssystem des Unternehmens, für die du nun arbeitest, zuständig ist. Der ursprüngliche Entwickler war ein Student, welcher bei der Implementierung nie Sicherheitsmechanismen eingebaut hat
+Der ursprüngliche Entwickler hatte damals nie Sicherheitsmechanismen eingebaut. Der Zugang zum Netzwerk und damit auch zum Zugangssystem der Türen würde an anderer Stelle geregelt, was eine Sicherheitsimplementierung bisher überflüssig machte. Im Zuge einer kürzlichen Umstrukturierung des Netzwerk, hat sich diese Anforderung jedoch geändert
 
-Zugriff auf die aktuelle Version des Services hat jeder, der Zugang zum Netzwerk hat. Dieser Zugang lässt einen sämtliche Türen abrufen und diese sogar entriegeln. Der Service ist nach außen durch eine REST API erreichbar und kann über diese ausgelesen und verändert werden. Dies stellt ein Sicherheitsrisiko dar und kann nicht weiter ignoriert werden
+Zugriff auf die aktuelle Version des Services hat jeder, der Zugang zum Netzwerk hat. Dieser Zugang lässt einen sämtliche Türen abrufen und diese sogar entriegeln. Der Service ist nach außen durch eine REST API erreichbar und kann über diese ausgelesen und verändert werden. Dies stellt ein Sicherheitsrisiko dar und darf nicht ignoriert werden
 
 Dein erstes Projekt als neuer Entwickler im Unternehmen wird es sein, beide Endpunkte des Services zu sichern
 
