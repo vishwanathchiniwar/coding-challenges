@@ -7,8 +7,7 @@ import com.mhp.coding.challenges.mapping.models.db.blocks.*
 import org.springframework.stereotype.Component
 import java.util.*
 
-@Component
-class ArticleRepository {
+object ArticleRepository {
     fun all(): List<Article> = setOf(1001L, 2002L, 3003L, 4004L, 5005L).map { it.createDummyArticle }
 
     fun findBy(id: Long): Article = id.createDummyArticle
@@ -25,10 +24,10 @@ class ArticleRepository {
             title = "Article Nr.: $this",
             description = "Article Description $this",
             author = "Max Mustermann",
-            blocks = createBlocks(),
+            blocks = dummyArticleBlocks,
         )
 
-    private fun Long.createBlocks(): Set<ArticleBlock> {
+    private val Long.dummyArticleBlocks: Set<ArticleBlock> by lazy {
         val textBlock = TextBlock(
             text = "Some Text for $this",
             sortIndex = 0
@@ -62,7 +61,7 @@ class ArticleRepository {
             sortIndex = 4
         )
 
-        return setOf(textBlock, imageBlock, secondTextBlock, galleryBlock, thirdTextBlock, videoBlock)
+        setOf(textBlock, imageBlock, secondTextBlock, galleryBlock, thirdTextBlock, videoBlock)
     }
 
     private fun createImage(imageId: Long): Image? {

@@ -9,7 +9,7 @@ import java.util.*
 class ArticleMapper {
     fun map(article: Article?): ArticleDto {
         //TODO
-        return ArticleDto()
+        return ArticleDto(0, "", "", "", emptyList())
     }
 
     // Not part of the challenge / Nicht Teil dieser Challenge.

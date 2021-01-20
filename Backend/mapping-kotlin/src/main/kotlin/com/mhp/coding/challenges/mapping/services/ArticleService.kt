@@ -7,24 +7,23 @@ import org.springframework.stereotype.Service
 
 @Service
 class ArticleService(
-    private val repository: ArticleRepository,
     private val mapper: ArticleMapper,
 ) {
     fun list(): List<ArticleDto> {
-        val articles = repository.all()
+        val articles = ArticleRepository.all()
         //TODO
         return emptyList()
     }
 
     fun articleForId(id: Long): ArticleDto {
-        val article = repository.findBy(id)
+        val article = ArticleRepository.findBy(id)
         //TODO
-        return ArticleDto()
+        return ArticleDto(0, "", "", "", emptyList())
     }
 
     fun create(articleDto: ArticleDto): ArticleDto {
         val article = mapper.map(articleDto)
-        repository.create(article)
+        ArticleRepository.create(article)
         return mapper.map(article)
     }
 }
