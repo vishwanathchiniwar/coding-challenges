@@ -25,9 +25,8 @@ It should be possible to select a house from the list. By tapping on a entry the
     - Use `RecyclerView`
     - Avoid use of third party dependencies where possible
   - iOS
-    - Code using Swift 5 or later
-    - Deployment Target iOS 12
-    - Use `UITableView` or `UICollectionView`
+    - Code using Swift
+    - Deployment Target iOS 14
     - No use of third party dependencies
 - Please provide the full git repository when sending in your results
 
