@@ -20,7 +20,7 @@ You are allowed to use the following assistance:
 
 ### Hint
 
-Keep in mind that his is a demonstration of your capabilites. So go ahead and impress us 🤯
+Keep in mind that this is a demonstration of your capabilites. So go ahead and impress us 🤯
 
 ## Aufgabe 🇩🇪
 
@@ -42,4 +42,4 @@ Hierzu stehen dir folgende Hilfsmittel zur Verfügung:
 
 ### Hinweis
 
-Denk daran, dass du mit der Aufgabe deine Fähigkeiten demonstriest. Also beeindrucke uns 🤯
+Denk daran, dass du mit der Aufgabe deine Fähigkeiten demonstrierst. Also beeindrucke uns 🤯
