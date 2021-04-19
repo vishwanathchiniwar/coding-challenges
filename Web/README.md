@@ -6,6 +6,10 @@ Create a single page application. The SPA should display **all** houses of Game 
 
 By clicking on one house there should be further information on a details page.
 
+Please treat the coding challenge as if you were going to show it to a client afterwards.
+
+Design and UX are completely up to your creativity. 
+
 ### APIs and Docs
 
 You are allowed to use the following assistance:
@@ -27,6 +31,10 @@ Keep in mind that this is a demonstration of your capabilites. So go ahead and i
 Erstelle eine Single-Page-Application. Die SPA soll einem Benutzer **alle** Häuser aus Game of Thrones in einer Übersicht anzeigen.
 
 Durch Klick auf ein Haus soll dieses auf einer Detailseite mit weiteren Informationen zu sehen sein.
+
+Bitte behandle die Coding Challenge so, als würdest du sie anschließend einem Kunden vorstellen.
+
+Design und UX sind komplett deiner Kreativität überlassen. 
 
 ### APIs und Docs
 
