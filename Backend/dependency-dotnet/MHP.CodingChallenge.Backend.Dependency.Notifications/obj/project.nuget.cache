@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QW5EvXm7Wc3kKg0DcKDyyCaZ1TR9IGKxDnIriZ/nptaqYCiN/D6CZCwwQAQvJzVk43aQ6sGhh2woc0/mULhXmA==",
+  "success": true,
+  "projectFilePath": "/Users/mbausdorf/Projects/MHP.CodingChallenge.Backend.Dependency/MHP.CodingChallenge.Backend.Dependency.Notifications/MHP.CodingChallenge.Backend.Dependency.Notifications.csproj",
+  "expectedPackageFiles": [
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.0/microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

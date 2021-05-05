@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uvhZkXPnRr3NpBdCT9tRVWreYk7G9ff6/xgOsw6wRQo8ZRjZ7dYqHLldFGGhUjNv8xQwVa4Y6ksZ/T0q+0YG+w==",
+  "success": true,
+  "projectFilePath": "/Users/mbausdorf/Projects/MHP.CodingChallenge.Backend.Mapping/MHP.CodingChallenge.Backend.Mapping.Data/MHP.CodingChallenge.Backend.Mapping.Data.csproj",
+  "expectedPackageFiles": [
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "/Users/mbausdorf/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
