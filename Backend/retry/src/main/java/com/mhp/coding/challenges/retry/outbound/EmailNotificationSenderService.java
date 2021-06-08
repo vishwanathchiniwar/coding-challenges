@@ -54,7 +54,6 @@ public class EmailNotificationSenderService implements NotificationSender {
     private void saveEmailBeforeSending(EmailRetry emailRetry) {
         int retryCount = emailRetry.getCount();
         retryCount++;
-        logger.info("Retry count (min: 2 and max: 6) : {}", retryCount);
         emailRetry.setCount(retryCount);
         emailRetry.setStatus(Status.RETRY);
         emailRetryRepository.save(emailRetry);
