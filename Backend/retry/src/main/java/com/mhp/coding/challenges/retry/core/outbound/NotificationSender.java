@@ -1,11 +1,8 @@
 package com.mhp.coding.challenges.retry.core.outbound;
 
-import com.mhp.coding.challenges.retry.core.entities.EmailNotification;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import com.mhp.coding.challenges.retry.core.entities.EmailRetry;
 
 public interface NotificationSender {
 
-    void sendEmail(@Valid @NotNull EmailNotification emailNotification);
+    void sendEmail(EmailRetry emailRetry);
 }

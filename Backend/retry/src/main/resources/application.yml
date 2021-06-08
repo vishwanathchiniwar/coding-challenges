@@ -11,3 +11,14 @@ spring:
           starttls:
             enable: false
             required: false
+  data:
+    mongodb:
+      database: emailretry
+      port: 27017
+      host: localhost
+cron:
+  expression: "0 0/5 * * * *"
+retry:
+  initialinterval: 5000
+  multiplier: 2
+  maxinterval: 80000

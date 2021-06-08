@@ -1,19 +1,25 @@
 package com.mhp.coding.challenges.retry.outbound;
 
-import com.mhp.coding.challenges.retry.core.entities.EmailNotification;
+import com.mhp.coding.challenges.retry.core.entities.EmailRetry;
+import com.mhp.coding.challenges.retry.core.enums.Status;
 import com.mhp.coding.challenges.retry.core.outbound.NotificationSender;
+import com.mhp.coding.challenges.retry.core.persistence.EmailRetryRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 
 @Service
 @Validated
 public class EmailNotificationSenderService implements NotificationSender {
+
+    private static final Logger logger = LoggerFactory.getLogger(EmailNotificationSenderService.class);
+
+    @Autowired
+    private EmailRetryRepository emailRetryRepository;
 
     private static final String SENDER_ADDRESS = "info@mhp.com";
 
@@ -23,19 +29,34 @@ public class EmailNotificationSenderService implements NotificationSender {
         this.mailSender = mailSender;
     }
 
-    @Async
     @Override
-    public void sendEmail(@Valid @NotNull EmailNotification emailNotification) {
+    public void sendEmail(EmailRetry emailRetry) {
         try {
             SimpleMailMessage mailMessage = new SimpleMailMessage();
             mailMessage.setFrom(SENDER_ADDRESS);
-            mailMessage.setTo(emailNotification.getRecipient());
-            mailMessage.setSubject(emailNotification.getSubject());
-            mailMessage.setText(emailNotification.getText());
-
+            mailMessage.setTo(emailRetry.getEmailNotification().getRecipient());
+            mailMessage.setSubject(emailRetry.getEmailNotification().getSubject());
+            mailMessage.setText(emailRetry.getEmailNotification().getText());
+            saveEmailBeforeSending(emailRetry);
             mailSender.send(mailMessage);
-        } catch (Exception e) {
-            throw new RuntimeException(String.format("Failed to send email to recipient: %s", emailNotification.getRecipient()));
+            logger.info("The email has sent successfully");
+            emailRetryRepository.delete(emailRetry);
         }
+        catch (Exception e) {
+            emailRetry.setStatus(Status.FAILED);
+            emailRetryRepository.save(emailRetry);
+            throw new RuntimeException(
+                    String.format("Failed to send email to recipient: %s",
+                            emailRetry.getEmailNotification().getRecipient()));
+        }
+    }
+
+    private void saveEmailBeforeSending(EmailRetry emailRetry) {
+        int retryCount = emailRetry.getCount();
+        retryCount++;
+        logger.info("Retry count (min: 2 and max: 6) : {}", retryCount);
+        emailRetry.setCount(retryCount);
+        emailRetry.setStatus(Status.RETRY);
+        emailRetryRepository.save(emailRetry);
     }
 }
